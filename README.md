@@ -1,8 +1,8 @@
 # ringer-sizer (draft)
 
 **An online ring-sizer using javascript.**
-This library is made for the [7 day ring project](http://www.the7dayringproject.com/).
-Accurately check your ring size online by using a standard size credit card.
+
+Accurately check your ring size online by using a standard size credit card. This library is made for the [7 day ring project](http://www.the7dayringproject.com/).
 
 
 ## Getting Started
