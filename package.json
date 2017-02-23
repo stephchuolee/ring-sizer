@@ -1,0 +1,19 @@
+{
+  "name": "ringer-sizer",
+  "version": "1.0.0",
+  "description": "Ring re-sizing package built for the 7 Day Ring Project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephchuolee/ringer-sizer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephchuolee/ringer-sizer/issues"
+  },
+  "homepage": "https://github.com/stephchuolee/ringer-sizer#readme"
+}
