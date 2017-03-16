@@ -1,9 +1,18 @@
+body{
+  font-family: Open Sans;
+}
+
 #card-container{
-  width: 400px;
+  width: 323.5275591px;
 }
 
 .card-img{
   width: 100%;
+}
+
+#ring-container{
+  display:flex;
+  flex-direction: row;
 }
 
 .ring {
@@ -11,14 +20,68 @@
   height: 40px;
   width: 40px;
   border-radius: 100%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display:flex;
+  align-items: center;
+}
+
+.ring div {
+  color: white;
+  margin: 0 auto;
 }
 
 .ring-4 {
-  width: 45px;
-  height: 45px;
+  width: 56.15888688px;
+  height: 56.15888688px;
 }
 
 .ring-4-5{
-  width: 50px;
-  height: 50px;
+  width: 57.71083555px;
+  height: 57.71083555px;
+}
+
+.ring-5{
+  width: 59.33496789px;
+  height: 59.33496789px;
+}
+
+.ring-5-5 {
+  width: 60.85082473px;
+  height: 60.85082473px;
+}
+
+.ring-6 {
+  width: 62.4027734px;
+  height: 62.4027734px;
+}
+
+.ring-6-5 {
+  width: 63.95472208px;
+  height: 63.95472208px;
+}
+
+.ring-7 {
+  width: 65.57885441px;
+  height: 65.57885441px;
+}
+
+.ring-7-5 {
+  width: 67.08268064px;
+  height: 67.08268064px;
+}
+
+.ring-8 {
+  width: 68.75493542px;
+  height: 68.75493542px;
+}
+
+.ring-8-5 {
+  width: 70.03018006px;
+  height: 70.03018006px;
+}
+
+.ring-9 {
+  width: 71.38963898px;
+  height: 71.38963898px;
 }
