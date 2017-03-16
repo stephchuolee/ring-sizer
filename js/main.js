@@ -18,12 +18,12 @@ $(function(){
 
 
   $('#increase-btn').on('click', function(){
-    card.css('width', '+=8');
+    card.css('width', '+=2');
     updateAllRings(rings);
   });
 
   $('#decrease-btn').on('click', function(){
-    card.css('width', '-=8');
+    card.css('width', '-=2');
     updateAllRings(rings);
   });
 
