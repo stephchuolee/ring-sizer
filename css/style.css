@@ -1,9 +1,17 @@
+.ring-sizer-container {
+  text-align: center;
+}
+
 #card-container{
   width: 400px;
 }
 
 .card-img{
   width: 100%;
+}
+
+.button, .ring {
+  background-color: #63c3d4 !important
 }
 
 .ring {
