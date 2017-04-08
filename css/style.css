@@ -11,9 +11,14 @@
   margin-bottom: 130px;
 }
 
-.card-container {
-  width: 323.5275591px;
-  margin: 30px auto;
+.ring-container {
+  margin: 0 auto;
+}
+
+#resizable { 
+  margin-top: 20px;
+  width: 312px; 
+  height: 196px; 
 }
 
 .instructions {
@@ -21,8 +26,15 @@
   max-width: 440px;
 }
 
-.card-img {
-  width: 100%;
+.credit-card{
+  background-color: #E7E7E7;
+  border-radius: 10px;
+  position: relative;
+}
+
+.credit-card-stripe{
+  height: 20%;
+
 }
 
 .button, .ring {
