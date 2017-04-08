@@ -11,7 +11,12 @@
   margin-bottom: 130px;
 }
 
+.ring-container {
+  margin: 0 auto;
+}
+
 #resizable { 
+  margin-top: 20px;
   width: 312px; 
   height: 196px; 
 }
@@ -25,6 +30,11 @@
   background-color: #E7E7E7;
   border-radius: 10px;
   position: relative;
+}
+
+.credit-card-stripe{
+  height: 20%;
+
 }
 
 .button, .ring {
