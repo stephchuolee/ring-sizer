@@ -1,19 +1,28 @@
 body{
-  font-family: Open Sans;
+  font-family: "Dosis", Open Sans;
 }
 
-#card-container{
+.ring-sizer-container {
+  text-align: center;
+  font-family: ;
+}
+
+#ring-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#card-container {
   width: 323.5275591px;
 }
 
-.card-img{
+.card-img {
   width: 100%;
 }
 
-#ring-container{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.button, .ring {
+  background-color: #63c3d4 !important
 }
 
 .ring {
