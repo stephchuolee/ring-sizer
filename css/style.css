@@ -13,12 +13,13 @@ body{
   flex-wrap: wrap;
 }
 
-#card-container {
-  width: 323.5275591px;
+#resizable { 
+  width: 312px; 
+  height: 196px; 
 }
 
-.card-img {
-  width: 100%;
+.credit-card{
+  background-color: #E7E7E7;
 }
 
 .button, .ring {
