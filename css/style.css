@@ -8,7 +8,7 @@
 }
 
 .step-container {
-  margin: 130px 0;
+  margin-bottom: 130px;
 }
 
 .card-container {
@@ -17,7 +17,7 @@
 }
 
 .instructions {
-  margin: 50px auto;
+  margin: 0 auto 50px auto;
   max-width: 440px;
 }
 
