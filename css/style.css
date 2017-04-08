@@ -1,14 +1,10 @@
-body{
+.ring-sizer-container {
+  text-align: center;
   font-family: "omnes-pro", Open Sans;
   font-size: 18px;
   line-height: 1.2em;
   font-weight: 300;
   font-style: normal;
-}
-
-.ring-sizer-container {
-  text-align: center;
-  font-family: ;
 }
 
 .step-container {
@@ -34,6 +30,11 @@ body{
   font-family: "Dosis", Open Sans;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   border-radius: 3px;
   transition: .1s opacity linear;
@@ -48,6 +49,7 @@ body{
   text-decoration: none;
   cursor: pointer;
   line-height: normal;
+  margin: 0 10px;
 }
 
 .button:hover {
