@@ -1,16 +1,14 @@
-body{
-  font-family: "Dosis", Open Sans;
-}
-
 .ring-sizer-container {
   text-align: center;
-  font-family: ;
+  font-family: "omnes-pro", Open Sans;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 300;
+  font-style: normal;
 }
 
-#ring-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.step-container {
+  margin-bottom: 130px;
 }
 
 #resizable { 
@@ -18,16 +16,57 @@ body{
   height: 196px; 
 }
 
+.instructions {
+  margin: 0 auto 50px auto;
+  max-width: 440px;
+}
+
 .credit-card{
   background-color: #E7E7E7;
+  border-radius: 10px;
+  position: relative;
 }
 
 .button, .ring {
+  background-color: #63c3d4;
+  font-family: "Dosis", Open Sans;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 3px;
+  transition: .1s opacity linear;
+  border-color: #63c3d4;
+  display: inline-block;
+  padding: 1em 2.5em;
+  color: #fff;
+  border-width: 0;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: normal;
+  margin: 0 10px;
+}
+
+.button:hover {
+  opacity: 0.8;
   background-color: #63c3d4 !important
 }
 
+.ring-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .ring {
-  background-color: tomato;
   height: 40px;
   width: 40px;
   border-radius: 100%;
