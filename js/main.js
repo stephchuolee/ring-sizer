@@ -3,18 +3,27 @@ $(function(){
   var cardBaseWidth = card.width();
 
   var rings = {
-    "ring-4": 45,
-    "ring-4-5": 50 
+    "ring-4": 56.15888688,
+    "ring-4-5": 57.71083555,
+    "ring-5": 59.33496789,
+    "ring-5-5": 60.85082473,
+    "ring-6": 62.4027734,
+    "ring-6-5": 63.95472208,
+    "ring-7": 65.57885441,
+    "ring-7-5": 67.08268064,
+    "ring-8": 68.75493542,
+    "ring-8-5": 70.03018006,
+    "ring-9": 71.38963898
   }
 
 
   $('#increase-btn').on('click', function(){
-    card.css('width', '+=10');
+    card.css('width', '+=2');
     updateAllRings(rings);
   });
 
   $('#decrease-btn').on('click', function(){
-    card.css('width', '-=10');
+    card.css('width', '-=2');
     updateAllRings(rings);
   });
 
