@@ -4,9 +4,10 @@ $(function(){
   var cardBaseWidth = card.width();
 
   card.resizable({
-    aspectRatio: 312 / 196
+    aspectRatio: 312 / 196,
+    handles: 'se'
   });
-  
+
   card.on('resizestop', function(){
     updateAllRings(rings, cardBaseWidth, card.width());
   });
