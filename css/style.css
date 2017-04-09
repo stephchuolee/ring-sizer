@@ -11,8 +11,9 @@
   margin-bottom: 130px;
 }
 
-.ring-container {
-  margin: 0 auto;
+.instructions {
+  margin: 0 auto 50px auto;
+  max-width: 440px;
 }
 
 #resizable { 
@@ -21,20 +22,57 @@
   height: 196px; 
 }
 
-.instructions {
-  margin: 0 auto 50px auto;
-  max-width: 440px;
-}
-
 .credit-card{
   background-color: #E7E7E7;
   border-radius: 10px;
   position: relative;
+  margin: 0 auto;
+}
+
+.credit-card-component{
+  position: absolute;
 }
 
 .credit-card-stripe{
+  top: 10%;
+  width: 100%;
   height: 20%;
+  background-color: rgba(0,0,0,0.57);
+}
 
+.credit-card-stipe-white{
+  left: 15%;
+  top: 40%;
+  width: 70%;
+  height: 15%;
+  background-color: white;
+}
+
+.credit-card-chip{
+  top: 70%;
+  left: 10%;
+  width: 10%;
+  height: 15%;
+  background-color: #FDDF73;
+  border-radius: 10px;
+}
+
+.credit-card-text {
+  top: 72%;
+  left: 30%;
+  width: 60%;
+  height: 1%;
+  background-color: #646464;
+}
+
+.credit-card-text-2{
+  top: 77%;
+  width: 45%
+}
+
+.credit-card-text-3{
+  top: 82%;
+  width: 50%;
 }
 
 .button, .ring {
@@ -67,6 +105,10 @@
 .button:hover {
   opacity: 0.8;
   background-color: #63c3d4 !important
+}
+
+.card-container{
+  margin: 30px auto 0;
 }
 
 .ring-container {
