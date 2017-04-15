@@ -2,28 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/stephchuolee/ringer-sizer/56f8dbd5c95ba2941ad1748fac79ed3d5dbcf28f/css/style.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- <script src="https://cdn.rawgit.com/stephchuolee/ringer-sizer/56f8dbd5c95ba2941ad1748fac79ed3d5dbcf28f/js/main.js"></script> -->
     <script src="js/main.js"></script>
   </head>
 
   <body>
     <div class="ring-sizer-container">
       <div class="step-container">
-        <div class="instructions">
-          Step 1: Find a credit card and adjust the image on the screen to match.
+        <div class="step-instructions">
+          <span class="desktop-instructions">
+            Step 1: Find a credit card and adjust the image on the screen to match.
+          </span>
+          <span class="mobile-instructions">
+            Step 1: Find a credit card and use the buttons to adjust the height of the image on the screen to match.
+          </span>
         </div>
-        <div class="buttons-wrapper">
+        <!-- <div class="buttons-wrapper">
           <button id="increase-btn" class="button">+ increase</button>
           <button id="decrease-btn" class="button">- decrease</button>
-        </div>
+        </div> -->
         <div class="card-container">
            <div id="resizable" class="credit-card">
              <div class="credit-card-component credit-card-stripe"></div>
@@ -33,11 +36,17 @@
              <div class="credit-card-component credit-card-text credit-card-text-2"></div>
              <div class="credit-card-component credit-card-text credit-card-text-3"></div>
            </div>
+           <div class="arrow-container">
+             <div class="arrow"></div>
+             <p class="arrow-instructions">
+               Click and drag on the corner to resize.
+             <p>
+           </div>
          </div>
       </div>
 
-    <div class="step-container">
-        <div class="instructions">
+      <div class="step-container">
+        <div class="step-instructions">
           Step 2: Use a ring that fits you and compare it to the ring sizes on the screen to find your accurate 7dayproject ring size.
         </div>
         <div id="ring-container" class="ring-container">
@@ -55,7 +64,5 @@
         </div>
       </div>
     </div>
-
-    
   </body>
 </html>

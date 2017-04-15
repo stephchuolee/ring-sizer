@@ -1,32 +1,62 @@
 .ring-sizer-container {
-  text-align: center;
-  font-family: "omnes-pro", Open Sans;
+  font-family: dosis;
   font-size: 18px;
-  line-height: 1.2em;
-  font-weight: 300;
   font-style: normal;
+  line-height: 1.2em;
+  /*overflow: hidden;*/
+  text-align: center;
+
+  margin-top: 50px;
 }
 
 .step-container {
-  margin-bottom: 130px;
+  margin-bottom: 100px;
 }
 
-.instructions {
+@media (max-width: 768px) {
+  .step-container {
+    margin-bottom: 50px;
+  }
+}
+
+.step-instructions {
   margin: 0 auto 50px auto;
   max-width: 440px;
 }
 
-#resizable { 
-  margin-top: 20px;
-  width: 312px; 
-  height: 196px; 
+@media (max-width: 768px) {
+  .desktop-instructions {
+    display: none;
+  }
 }
 
-.credit-card{
+@media (min-width: 768px) {
+  .mobile-instructions {
+    display: none;
+  }
+}
+
+#resizable {
+  margin-top: 20px;
+  width: 312px;
+  height: 196px;
+}
+
+.credit-card {
   background-color: #E7E7E7;
   border-radius: 10px;
+  display: inline-block;
   position: relative;
-  margin: 0 auto;
+
+  margin-left: 159px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .credit-card {
+    margin-left: 45px;
+  }
 }
 
 .credit-card-component{
@@ -80,11 +110,13 @@
   font-family: "Dosis", Open Sans;
 }
 
-.button-container {
+.buttons-wrapper {
   display: flex;
   justify-content: center;
 }
-
+.buttons-wrapper > .button:first-child {
+  margin-right: 10px;
+}
 .button {
   border-radius: 3px;
   transition: .1s opacity linear;
@@ -99,7 +131,6 @@
   text-decoration: none;
   cursor: pointer;
   line-height: normal;
-  margin: 0 10px;
 }
 
 .button:hover {
@@ -132,6 +163,8 @@
   color: white;
   margin: 0 auto;
 }
+
+/* RINGS */
 
 .ring-4 {
   width: 56.15888688px;
@@ -186,4 +219,53 @@
 .ring-9 {
   width: 71.38963898px;
   height: 71.38963898px;
+}
+
+/* ARROW */
+
+@media (max-width: 768px) {
+  .arrow-container {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .arrow-container {
+    display: inline-block;
+  }
+}
+
+.arrow {
+  border-top: 9px solid transparent;
+  border-right: 9px solid #646464;
+  display: inline-block;
+  height: 0;
+  margin-right: 10px;
+  position: relative;
+  width: 0;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.arrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid #646464;
+  border-radius: 20px 0 0 0;
+  top: -12px;
+  left: -9px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.arrow-instructions {
+  color: #63c3d4;
+  display: inline-block;
+  width: 120px;
+  font-size: 15px;
 }
