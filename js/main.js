@@ -7,7 +7,7 @@ $(function(){
 
   card.resizable({
     aspectRatio: 312 / 196,
-    handles: 'se'
+    handles: 'se',
   });
 
   card.on('resizestop', function(){
@@ -25,7 +25,11 @@ $(function(){
     "ring-7-5": 67.08268064,
     "ring-8": 68.75493542,
     "ring-8-5": 70.03018006,
-    "ring-9": 71.38963898
+    "ring-9": 71.38963898,
+    "ring-9-5":72.54457753,
+    "ring-10": 74.10855681,
+    "ring-10-5": 75.55222999,
+    "ring-11": 77.11620928
   }
 
   // Aspect ratio of the card divided by the width modifier
