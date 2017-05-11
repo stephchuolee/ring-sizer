@@ -1,3 +1,6 @@
+/* global $ */
+/* eslint-disable */
+
 $(function(){
   var card = $('#resizable');
   var cardBaseWidth = card.width();
@@ -26,7 +29,7 @@ $(function(){
   }
 
   // Aspect ratio of the card divided by the width modifier
-  var cardHeightModifier = 312 / 196 / 2
+  var cardHeightModifier = 312 / 196 / 2;
 
   $('#increase-btn').on('click', function() {
     card.css('width', '+=2');
