@@ -1,11 +1,10 @@
-
 $(function(){
   var card = $('#resizable');
   var cardBaseWidth = card.width();
 
   card.resizable({
     aspectRatio: 312 / 196,
-    handles: 'se'
+    handles: 'se',
   });
 
   card.on('resizestop', function(){
@@ -40,24 +39,19 @@ $(function(){
     updateAllRings(rings, cardBaseWidth, card.width());
   });
 
-
-  function updateRing(ring, ringBaseWidth, baseCardWidth, newCardWidth){
-
+  function updateRing(ring, ringBaseWidth, baseCardWidth, newCardWidth) {
     var ring = $('.'+ring);
-    var changeRatio = 1 + ((newCardWidth - baseCardWidth) / baseCardWidth); 
-    
+    var changeRatio = 1 + ((newCardWidth - baseCardWidth) / baseCardWidth);
     var newRingWidth = ringBaseWidth * changeRatio;
-    console.log('new ring width: '+newRingWidth);
 
     ring.css('width', newRingWidth);
     ring.css('height', newRingWidth);
   }
 
-  function updateAllRings(rings, baseCardWidth, newCardWidth){
-    for(var key in rings){
+  function updateAllRings(rings, baseCardWidth, newCardWidth) {
+    for (var key in rings) {
       updateRing(key, rings[key], baseCardWidth, newCardWidth);
     }
   }
 
 })
-
