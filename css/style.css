@@ -1,3 +1,27 @@
+#card-container{
+  width: 312px; /* This is the actual width of a card */
+  margin: 20px auto 0;
+}
+
+.credit-card-aspect-ratio {
+  position: relative;
+}
+
+.credit-card-aspect-ratio:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 62.82051282%;  /*(196 / 312) * 100%;*/
+}
+
+.aspect-content {
+  position: absolute  !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .ring-sizer-container {
   text-align: center;
   font-family: "omnes-pro", Open Sans;
@@ -14,12 +38,6 @@
 .instructions {
   margin: 0 auto 50px auto;
   max-width: 440px;
-}
-
-#resizable {
-  margin-top: 20px;
-  width: 312px;
-  height: 196px;
 }
 
 .credit-card{
