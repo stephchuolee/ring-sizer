@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 $(function(){
-  var card = $('#resizable');
+  var card = $('#card-container');
   var cardBaseWidth = card.width();
 
   card.resizable({
