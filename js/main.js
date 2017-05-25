@@ -1,3 +1,6 @@
+/* global $ */
+/* eslint-disable */
+
 $(function(){
   var card = $('#card-container');
   var cardBaseWidth = card.width();
@@ -8,7 +11,7 @@ $(function(){
   });
 
   card.on('resizestop', function(){
-    updateAllRings(rings, cardBaseWidth, card.width());
+    updateAllRings();
   });
 
   var rings = {
@@ -26,32 +29,29 @@ $(function(){
     "ring-9-5":72.54457753,
     "ring-10": 74.10855681,
     "ring-10-5": 75.55222999,
-    "ring-11": 77.11620928,
-  };
-
-  $('#increase-btn').on('click', function(){
-    card.css('width', '+=2');
-    updateAllRings(rings, cardBaseWidth, card.width());
-  });
-
-  $('#decrease-btn').on('click', function(){
-    card.css('width', '-=2');
-    updateAllRings(rings, cardBaseWidth, card.width());
-  });
-
-  function updateRing(ring, ringBaseWidth, baseCardWidth, newCardWidth) {
-    var ring = $('.'+ring);
-    var changeRatio = 1 + ((newCardWidth - baseCardWidth) / baseCardWidth);
-    var newRingWidth = ringBaseWidth * changeRatio;
-
-    ring.css('width', newRingWidth);
-    ring.css('height', newRingWidth);
+    "ring-11": 77.11620928
   }
 
-  function updateAllRings(rings, baseCardWidth, newCardWidth) {
+  // Aspect ratio of the card divided by the width modifier
+  var cardHeightModifier = 312 / 196 / 2;
+
+  $('#increase-btn').on('click', function() {
+    card.css('width', '+=2');
+    card.css('height', '+=' + cardHeightModifier);
+    updateAllRings();
+  });
+
+  $('#decrease-btn').on('click', function() {
+    card.css('width', '-=2');
+    card.css('height', '-=' + cardHeightModifier);
+    updateAllRings();
+  });
+
+  function updateAllRings() {
+    var changeRatio = 1 + ((card.width() - cardBaseWidth) / cardBaseWidth);
     for (var key in rings) {
-      updateRing(key, rings[key], baseCardWidth, newCardWidth);
+      var newDiameter = rings[key] * changeRatio;
+      $('.' + key).width(newDiameter).height(newDiameter);
     }
   }
-
 })
