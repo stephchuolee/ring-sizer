@@ -225,3 +225,40 @@
   width: 77.11620928px;
   height: 77.11620928px;
 }
+
+/* ARROW */
+
+.arrow {
+  border-top: 9px solid transparent;
+  border-right: 9px solid #646464;
+  display: inline-block;
+  height: 0;
+  margin-right: 10px;
+  position: relative;
+  width: 0;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.arrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid #646464;
+  border-radius: 20px 0 0 0;
+  top: -12px;
+  left: -9px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.arrow-instructions {
+  color: #63c3d4;
+  display: inline-block;
+  width: 120px;
+  font-size: 15px;
+}
