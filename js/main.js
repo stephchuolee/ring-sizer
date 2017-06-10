@@ -1,13 +1,13 @@
-$(function(){
+$(function() {
   var card = $('#card-container');
   var cardBaseWidth = card.width();
-
+  var aspectRatio = 312 / 196;
   card.resizable({
-    aspectRatio: 312 / 196,
+    aspectRatio: aspectRatio,
     handles: 'se',
   });
 
-  card.on('resizestop', function(){
+  card.on('resizestop', function() {
     updateAllRings(rings, cardBaseWidth, card.width());
   });
 
@@ -29,12 +29,14 @@ $(function(){
     "ring-11": 77.11620928,
   };
 
-  $('#increase-btn').on('click', function(){
+  $('#increase-btn').on('click', function() {
+    card.css('height', 'auto');
     card.css('width', '+=2');
     updateAllRings(rings, cardBaseWidth, card.width());
   });
 
-  $('#decrease-btn').on('click', function(){
+  $('#decrease-btn').on('click', function() {
+    card.css('height', 'auto');
     card.css('width', '-=2');
     updateAllRings(rings, cardBaseWidth, card.width());
   });
