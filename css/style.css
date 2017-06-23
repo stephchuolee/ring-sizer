@@ -129,6 +129,8 @@
   margin: 30px auto 0;
 }
 
+/* RINGS */
+
 .ring-container {
   display: flex;
   flex-direction: row;
@@ -137,18 +139,15 @@
 }
 
 .ring {
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  display:flex;
   align-items: center;
-}
-
-.ring div {
+  border-radius: 100%;
   color: white;
-  margin: 0 auto;
+  display:flex;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 40px;
 }
 
 .ring-4 {
@@ -228,13 +227,20 @@
 
 /* ARROW */
 
+.arrow-container {
+  position: absolute;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 .arrow {
   border-top: 9px solid transparent;
   border-right: 9px solid #646464;
   display: inline-block;
   height: 0;
   margin-right: 10px;
-  position: relative;
+  position: absolute;
   width: 0;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);

@@ -1,7 +1,12 @@
+/* eslint-disable */
+
 $(function() {
   var card = $('#card-container');
   var cardBaseWidth = card.width();
+  var arrow = $('.arrow-container');
   var aspectRatio = 312 / 196;
+  updateArrowOffset();
+
   card.resizable({
     aspectRatio: aspectRatio,
     handles: 'se',
@@ -33,12 +38,14 @@ $(function() {
     card.css('height', 'auto');
     card.css('width', '+=2');
     updateAllRings(rings, cardBaseWidth, card.width());
+    updateArrowOffset();
   });
 
   $('#decrease-btn').on('click', function() {
     card.css('height', 'auto');
     card.css('width', '-=2');
     updateAllRings(rings, cardBaseWidth, card.width());
+    updateArrowOffset();
   });
 
   function updateRing(ring, ringBaseWidth, baseCardWidth, newCardWidth) {
@@ -56,4 +63,10 @@ $(function() {
     }
   }
 
+  function updateArrowOffset() {
+    var cardPositionLeft = card.offset().left;
+    var offsetArrow = cardPositionLeft + card.width();
+    console.log(offsetArrow);
+    arrow.css('left', offsetArrow + 'px');
+  }
 })
