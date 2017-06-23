@@ -11,11 +11,11 @@
   display: block;
   content: "";
   width: 100%;
-  padding-top: 62.82051282%;  /*(196 / 312) * 100%;*/
+  padding-top: 62.82051282%;  /* (196 / 312) * 100%; */
 }
 
 .aspect-content {
-  position: absolute  !important;
+  position: absolute !important;
   top: 0;
   left: 0;
   right: 0;
@@ -129,6 +129,8 @@
   margin: 30px auto 0;
 }
 
+/* RINGS */
+
 .ring-container {
   display: flex;
   flex-direction: row;
@@ -137,18 +139,15 @@
 }
 
 .ring {
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  display:flex;
   align-items: center;
-}
-
-.ring div {
+  border-radius: 100%;
   color: white;
-  margin: 0 auto;
+  display:flex;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 40px;
 }
 
 .ring-4 {
@@ -224,4 +223,52 @@
 .ring-11 {
   width: 78.16287234px;
   height: 78.16287234px;
+}
+
+/* ARROW */
+
+.arrow-container {
+  position: absolute;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.arrow {
+  border-top: 9px solid transparent;
+  border-right: 9px solid #646464;
+  display: inline-block;
+  height: 0;
+  margin-right: 10px;
+  position: absolute;
+  width: 0;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.arrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid #646464;
+  border-radius: 20px 0 0 0;
+  top: -12px;
+  left: -9px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.arrow-instructions {
+  color: #63c3d4;
+  display: inline-block;
+  width: 120px;
+  font-size: 15px;
+  margin-left: 1.5em; /* position instructions to right of arrow */
+  margin-top: 0;
 }
