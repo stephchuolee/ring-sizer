@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 $(function() {
   var card = $('#card-container');
   var cardBaseWidth = card.width();
