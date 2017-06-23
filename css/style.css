@@ -11,11 +11,11 @@
   display: block;
   content: "";
   width: 100%;
-  padding-top: 62.82051282%;  /*(196 / 312) * 100%;*/
+  padding-top: 62.82051282%;  /* (196 / 312) * 100%; */
 }
 
 .aspect-content {
-  position: absolute  !important;
+  position: absolute !important;
   top: 0;
   left: 0;
   right: 0;
@@ -247,6 +247,7 @@
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+
 .arrow:after {
   content: "";
   position: absolute;
@@ -262,9 +263,12 @@
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
 }
+
 .arrow-instructions {
   color: #63c3d4;
   display: inline-block;
   width: 120px;
   font-size: 15px;
+  margin-left: 1.5em; /* position instructions to right of arrow */
+  margin-top: 0;
 }
