@@ -3,7 +3,6 @@ $(function() {
   var cardBaseWidth = card.width();
   var arrow = $('.arrow-container');
   var aspectRatio = 312 / 196;
-  updateArrowOffset(); /* Initially position the arrow container diagonally to the bottom of the CC */
 
   card.resizable({
     aspectRatio: aspectRatio,
@@ -12,7 +11,6 @@ $(function() {
 
   card.on('resizestop', function() {
     updateAllRings();
-    updateArrowOffset();
   });
 
   var rings = {
@@ -37,14 +35,12 @@ $(function() {
     card.css('height', 'auto');
     card.css('width', '+=2');
     updateAllRings();
-    updateArrowOffset();
   });
 
   $('#decrease-btn').on('click', function() {
     card.css('height', 'auto');
     card.css('width', '-=2');
     updateAllRings();
-    updateArrowOffset();
   });
 
   function updateAllRings() {
@@ -54,12 +50,5 @@ $(function() {
       var newDiameter = rings[key] * changeRatio;
       $('.' + key).width(newDiameter).height(newDiameter);
     }
-  }
-
-  function updateArrowOffset() {
-    var cardXCoor = card.offset().left;
-    var offsetArrow = cardXCoor + card.width();
-
-    arrow.css('left', offsetArrow + 'px');
   }
 })

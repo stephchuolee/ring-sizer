@@ -229,6 +229,7 @@
 
 .arrow-container {
   position: absolute;
+  right: -150px;
   display: inline-block;
   margin-top: 10px;
   margin-left: 10px;
