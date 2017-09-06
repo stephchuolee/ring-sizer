@@ -273,3 +273,11 @@
   margin-left: 1.5em; /* position instructions to right of arrow */
   margin-top: 0;
 }
+
+/* Modify default squarespace banner/content padding*/
+.content-inner { 
+  padding-top: 0px;
+}
+.title-desc-inner {
+  padding-bottom: 0px;
+}
