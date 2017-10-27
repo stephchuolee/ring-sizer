@@ -1,3 +1,10 @@
+/* jQuery UI CSS */
+/* Source: https://jqueryui.com/resources/demos/style.css */
+
+.ui-draggable, .ui-droppable {
+  background-position: top;
+}
+
 #card-container{
   width: 312px; /* This is the actual width of a card */
   margin: 20px auto 0;
@@ -130,7 +137,6 @@
 }
 
 /* RINGS */
-
 .ring-container {
   display: flex;
   flex-direction: row;
