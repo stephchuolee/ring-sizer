@@ -15,4 +15,4 @@ To use the ring sizer, visit the [ring sizer](http://www.the7dayringproject.com/
 
 
 ## Authors
-See the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See the list of [contributors](https://github.com/stephchuolee/ringer-sizer/graphs/contributors) who participated in this project.
