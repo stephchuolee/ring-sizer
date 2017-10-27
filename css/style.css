@@ -1,7 +1,7 @@
 body {
-  text-align: center;
   font-family: "omnes-pro", dosis, Open Sans;
   font-size: 18px;
+  text-align: center;
   line-height: 1.2em;
   font-weight: 300;
   font-style: normal;
@@ -12,8 +12,8 @@ body {
 }
 
 .instructions {
-  margin: 0 auto 50px auto;
   max-width: 440px;
+  margin: 0 auto 50px auto;
 }
 
 /* CARD STYLING */
@@ -36,16 +36,16 @@ body {
 .aspect-content {
   position: absolute !important;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
 }
 
 .credit-card{
-  background-color: #E7E7E7;
-  border-radius: 10px;
   position: relative;
   margin: 0 auto;
+  background-color: #E7E7E7;
+  border-radius: 10px;
 }
 
 .credit-card-component{
@@ -60,16 +60,16 @@ body {
 }
 
 .credit-card-stipe-white {
-  left: 15%;
   top: 40%;
+  left: 15%;
   width: 70%;
   height: 15%;
   background-color: white;
 }
 
 .credit-card-chip {
-  top: 70%;
   left: 10%;
+  top: 70%;
   width: 10%;
   height: 15%;
   background-color: #FDDF73;
@@ -77,8 +77,8 @@ body {
 }
 
 .credit-card-text {
-  top: 72%;
   left: 30%;
+  top: 72%;
   width: 60%;
   height: 1%;
   background-color: #646464;
@@ -86,7 +86,7 @@ body {
 
 .credit-card-text-2 {
   top: 77%;
-  width: 45%
+  width: 45%;
 }
 
 .credit-card-text-3 {
@@ -103,16 +103,17 @@ body {
 }
 
 .ring {
-  background-color: #63c3d4;
+  display: flex;
   align-items: center;
-  border-radius: 100%;
-  color: white;
-  display:flex;
-  height: 40px;
   justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #63c3d4;
+  color: white;
+  border-radius: 100%;
   margin-bottom: 10px;
   margin-right: 10px;
-  width: 40px;
+  
 }
 
 .ring-4 {
@@ -192,21 +193,21 @@ body {
 
 /* ARROW STYLING */
 .arrow-container {
+  display: inline-block;
   position: absolute;
   right: -150px;
-  display: inline-block;
   margin-top: 10px;
   margin-left: 10px;
 }
 
 .arrow {
-  border-top: 9px solid transparent;
-  border-right: 9px solid #646464;
   display: inline-block;
-  height: 0;
-  margin-right: 10px;
   position: absolute;
   width: 0;
+  height: 0;
+  margin-right: 10px;
+  border-top: 9px solid transparent;
+  border-right: 9px solid #646464;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -216,13 +217,13 @@ body {
 .arrow:after {
   content: "";
   position: absolute;
-  border: 0 solid transparent;
-  border-top: 3px solid #646464;
-  border-radius: 20px 0 0 0;
   top: -12px;
   left: -9px;
   width: 12px;
   height: 12px;
+  border: 0 solid transparent;
+  border-top: 3px solid #646464;
+  border-radius: 20px 0 0 0;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -230,12 +231,12 @@ body {
 }
 
 .arrow-instructions {
-  color: #63c3d4;
   display: inline-block;
   width: 120px;
-  font-size: 15px;
-  margin-left: 1.5em; /* position instructions to right of arrow */
   margin-top: 0;
+  margin-left: 1.5em; /* position instructions to right of arrow */
+  font-size: 15px;
+  color: #63c3d4;
 }
 
 /* OVERRIDE SQUARE SPACE STYLING */
@@ -245,6 +246,7 @@ body {
 
 /* jQuery UI CSS */
 /* Source: https://jqueryui.com/resources/demos/style.css */
-.ui-draggable, .ui-droppable {
+.ui-draggable,
+.ui-droppable {
   background-position: top;
 }
