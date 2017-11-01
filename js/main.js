@@ -1,7 +1,7 @@
 $(function() {
-  var card = $('#card-container');
+  var card = $('.js-card');
   var cardBaseWidth = card.width();
-  var arrow = $('.arrow-container');
+  var arrow = $('.js-arrow');
   var aspectRatio = 312 / 196;
 
   card.resizable({
@@ -31,18 +31,6 @@ $(function() {
     'ring-11': 77.11620928,
   };
 
-  $('#increase-btn').on('click', function() {
-    card.css('height', 'auto');
-    card.css('width', '+=2');
-    updateAllRings();
-  });
-
-  $('#decrease-btn').on('click', function() {
-    card.css('height', 'auto');
-    card.css('width', '-=2');
-    updateAllRings();
-  });
-
   function updateAllRings() {
     var changeRatio = 1 + ((card.width() - cardBaseWidth) / cardBaseWidth);
 
@@ -51,4 +39,4 @@ $(function() {
       $('.' + key).width(newDiameter).height(newDiameter);
     }
   }
-})
+});
